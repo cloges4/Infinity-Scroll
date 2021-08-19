@@ -9,7 +9,7 @@ let totalImages = 0;
 let photosArray = [];
 
 // Unsplash API
-let count = 10;
+let count = 8;
 const apiKey = UNSPLASH_API_KEY;
 let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&nature`;
 
@@ -66,6 +66,7 @@ async function getPhotos() {
     displayPhotos();
   } catch (error) {
     // Catch Error Here
+    console.log('Oops, Something Went Wrong!');
   }
 }
 
